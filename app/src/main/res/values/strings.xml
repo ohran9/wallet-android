@@ -259,4 +259,17 @@
     <string name="RemindTodayAt">\'Remind today at\' HH:mm</string>
     <string name="RemindDayAt">\'Remind on\' MMM d \'at\' HH:mm</string>
     <string name="RemindDayYearAt">\'Remind on\' MMM d yyyy \'at\' HH:mm</string>
+
+
+    <!--Indeed Challenge-->
+    <string name="error_message_load">Sorry, we seem to be having a problem loading data. Please try again!</string>
+    <string name="title_currency_listings">Crypto Currencies</string>
+    <string name="title_name">Name</string>
+    <string name="title_price">Price</string>
+    <string name="title_twenty_four_hr_per">24h%</string>
+    <string name="title_seven_day_per">7d%</string>
+    <string name="title_market_cap">Market Cap</string>
+    <string name="title_volume">Volume(24h)</string>
+    <string name="sign_dollar">$</string>
+    <string name="sign_percent">%</string>
 </resources>
