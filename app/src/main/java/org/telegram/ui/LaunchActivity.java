@@ -23,6 +23,7 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.Window;
 
+import org.telegram.crypto.ui.CurrenciesFragment;
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.BuildVars;
 import org.telegram.messenger.ApplicationLoader;
@@ -163,15 +164,19 @@ public class LaunchActivity extends Activity implements ActionBarLayout.ActionBa
             userConfig.clearTonConfig();
             userConfig.saveConfig(true);
         }*/
-        if (TextUtils.isEmpty(userConfig.tonEncryptedData)) {
-            fragment = new WalletCreateActivity(WalletCreateActivity.TYPE_CREATE);
-        } else if (!userConfig.tonCreationFinished) {
-            WalletCreateActivity activity = new WalletCreateActivity(WalletCreateActivity.TYPE_KEY_GENERATED);
-            activity.setResumeCreation();
-            fragment = activity;
-        } else {
-            fragment = new WalletActivity();
-        }
+//        if (TextUtils.isEmpty(userConfig.tonEncryptedData)) {
+//            fragment = new WalletCreateActivity(WalletCreateActivity.TYPE_CREATE);
+//        } else if (!userConfig.tonCreationFinished) {
+//            WalletCreateActivity activity = new WalletCreateActivity(WalletCreateActivity.TYPE_KEY_GENERATED);
+//            activity.setResumeCreation();
+//            fragment = activity;
+//        } else {
+//            fragment = new WalletActivity();
+//        }
+
+        //***Adds the new Currency listing fragment here***
+        fragment = new CurrenciesFragment();
+
         return fragment;
     }
 
